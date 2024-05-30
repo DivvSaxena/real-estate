@@ -28,6 +28,15 @@ function notRenderHamburger(){
     document.getElementById('list').style.display = `none`
 }
 
+function scrollFunctionOne(){
+    aboutUsEl.scrollIntoView({
+        block:'start',
+        behavior:'smooth',
+        inline:'start'
+    })
+    notRenderHamburger()
+}
+
 function scrollFunctionClients(){
     clientsEl.scrollIntoView({
         block:'start',
