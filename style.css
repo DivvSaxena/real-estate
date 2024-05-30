@@ -1,0 +1,941 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: Veto Sans Cond;
+    src: url('./assets/fonts/VetoSansCond-Medium.ttf');
+}
+
+@font-face {
+    font-family: Visia Pro;
+    src: url('./assets/fonts/VisiaPro-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Helvetica-rounded;
+    src: url('./assets/fonts/helvetica-rounded-bold-5871d05ead8de.otf');
+}
+
+@font-face {
+    font-family: Ambit;
+    src: url('./assets/fonts/Ambit\ Bold.otf');
+}
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+.container{
+    margin: 0 auto;
+    max-width: 375px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #181818;
+    padding: 1em;
+    position: fixed;
+    background-color: #fff;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    box-shadow: 2px 2px 100px #5F4545;
+}
+
+
+.header > img{
+    width: 20%;
+    margin-top: 0.1275em;
+    margin-left: 1.75em;
+}
+
+.header > h1{
+    font-size: 3rem;
+    margin-left: 0.75em;
+}
+
+.header > h2{
+    font-family: Visia Pro;
+    font-size: 1rem;
+    margin-right: 3em;
+    cursor: pointer;
+}
+
+.big-screen{
+    display: none;
+}
+
+.big-screen-two{
+    display: none;
+}
+
+.sub-header-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CDEA67;
+    margin-top: 5.6em;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.sub-header-two > ul{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.hamburger-list > li{
+    font-family: Visia Pro;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #181818;
+    list-style: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+.section-six,
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #181818;
+    text-align: center;
+}
+
+/* SECTION ONE STYLING */
+
+.section-one{
+    position: relative;
+    margin-top: 8.125em;
+}
+
+.sub-section-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.sub-section-one > h1{
+    font-family: Veto Sans Cond;
+    font-size: 3.625rem;
+    font-weight: 300;
+    margin-top: 0.5em;
+}
+
+.hidden-img-one{
+    display: none;
+}
+
+.hidden-img-two{
+    display: none;
+}
+
+.copyright{
+    display: none;
+}
+
+.sub-section-one > button{
+    font-family: Visia Pro;
+    font-weight: 800;
+    width: 30%;
+    height: 41px;
+    background: rgba(171, 184, 195, 0.5);
+    border: 1px solid #ABB8C3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(11.2px);
+    border-radius: 26px;
+    cursor: pointer;
+    color: #181818;
+}
+
+.video-one{
+    width: 80%;
+    height: 314px;
+    background-color: #888;
+    margin: 2em auto 0;
+    position: absolute;
+    top: 2em;
+    bottom: 0;
+    overflow: hidden;
+    margin-bottom: 1em;
+    z-index: -1;
+}
+
+.video-one > video{
+    min-width: 100%; 
+    min-height: 100%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container-two{
+    position: absolute;
+    top: 310px;
+    left: 22px;    
+}
+
+.video-two > video{
+    width: 166px;
+    height: 126px;
+    object-fit: cover;
+    border: 1px solid #181818;
+} 
+
+.container-two > h2{
+    font-family: Visia Pro;
+}
+
+.bold{
+    font-family: Ambit;
+}
+
+/* SECTION TWO STYLING */
+
+.section-two{
+    margin-top: 22em;
+    text-align: center;
+}
+
+.text{
+    color: #CDEA67;
+}
+
+.section-two >h1{
+    font-family: Visia Pro;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 2.5em;
+    width: 85%;
+}
+
+.section-two> h2{
+    font-family: Visia Pro;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 85%; 
+}
+
+.section-two > h3{
+    font-size: 3.438rem;
+    font-family: Veto Sans Cond;
+    font-weight: 300;
+}
+
+.section-two > h4{
+    font-family: Visia Pro;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 2.5em;
+    width: 85%;
+}
+
+/* SECTION THREE STYLING */
+.section-three{
+    margin: 3.5em auto;
+    background-color: #CDEA67;
+    padding: 2em;
+}
+
+.section-three > h1{
+    font-family: Veto Sans Cond;
+    font-weight: 800;
+}
+
+.sub-section-three > h1 > a{
+    font-family: Veto Sans Cond;
+    text-decoration: none;
+    font-size: 5.313rem;
+    font-weight: 300;
+    color: #181818;
+}
+
+.img--socials{
+    width: 45%;
+    height: 197px;
+    background: url('./assets/images/social.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: rotate(5.64deg);
+    margin: -0.5em auto;
+}
+
+/* SECTION FOUR STYLING */
+
+.section-four > h1{
+    font-family: Visia Pro;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.section-four > h2{
+    font-family: Veto Sans Cond;
+    font-size: 3.438rem;
+    font-weight: 300;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img{
+    width: 250px;
+    height: 232px;
+    margin: 0 auto;
+    background-color: #5F4545;
+}
+
+.card-one{
+    line-height: 1.8;
+    margin-top: 1.5em;
+}
+
+.card-one > h1{
+    font-size: 1.5rem;
+    font-family: Veto Sans Cond;
+    font-weight: 800;
+    color: #181818;
+    margin-top: 0.5em;
+}
+
+.card-one > h2{
+    font-size: 0.938rem;
+    font-family: Visia Pro;
+    width: 60%;
+}
+
+.card-one > h3{
+    font-size: 0.875rem;
+    font-family: Visia Pro;
+    width: 60%;
+}
+
+.head-two{
+    display: none;
+}
+
+.one{
+    background: url('./assets/images/cards/card-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.two{
+    background: url('./assets/images/cards/card-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.three{
+    background: url('./assets/images/cards/card-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* SECTION FIVE STYLING */
+
+.section-five{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 2.5em;
+}
+
+.section-five > h1{
+    font-family: Veto Sans Cond;
+    text-decoration: none;
+    font-size: 3.438rem;
+    font-weight: 300;
+    margin-top: 0.5em;
+}
+
+.img--feedback--one{
+    width: 255px;
+    height: 232px;
+    background-color: #5F4545;
+    border-radius: 27px;
+    margin: 0 auto;
+}
+
+.feedback-one{
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.sub-feed > h2{
+    font-family: Visia Pro;
+    font-size: 1rem;
+    width: 85%;
+    margin: 0 auto;
+    margin: 1em auto;
+}
+
+.sub-feed > hr{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.sub-feed > h3{
+    font-family: Helvetica-rounded;
+    padding: 1em;
+}
+
+.feed-one{
+    background: url('./assets/images/feedbacks/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.feed-two{
+    background: url('./assets/images/feedbacks/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.feed-three{
+    background: url('./assets/images/feedbacks/3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* SECTION SIX STYLING */
+
+
+
+.sub-section-six{
+    background-color: #CDEA67;
+    width: 100%;
+}
+
+.sub-section-six > h1{
+    font-family: Visia Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 1.5em auto 1em;
+}
+
+
+.sub-section-six > h2,
+.section-six > h2{
+    font-family: Ambit;
+    text-decoration: none;
+    font-size: 3.438rem;
+    font-weight: 300;
+}
+
+.section-six > h2{
+    margin-top: 0.25em;
+}
+
+.section-six > h3{
+    font-family: Veto Sans Cond;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    margin-top: 1.5em;
+}
+
+.img-contact{
+    width: 280px;
+    height: 179px;
+    background: url('./assets/images/thumbs-up.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0.5em auto;
+}
+
+.sub-headline{
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+    justify-content: center;
+}
+
+.sub-headline > h2{
+    font-family: Veto Sans Cond;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #181818;
+    margin-left: 0.5em;
+}
+
+.sub-headline > img{
+    width: 18%;
+}
+
+.resort{
+    width: 100%;
+    height: 253px;
+    background: url('./assets/images/villa.jpg');
+    background-size: cover;
+}
+
+/* FOOTER STYLING */
+
+.footer{
+    background-color: #181818;
+    color: #fff;
+}
+
+.footer > img{
+    width: 40%;
+    margin: 1.5em auto;
+    object-fit: cover;
+    fill: #fff;
+}
+
+.footer > h1{
+    font-family: Veto Sans Cond;
+    font-weight: 500;
+    font-size: 3.438rem;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.footer-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer-btns > button{
+    font-family: Visia Pro;
+    font-weight: 400;
+    height: 40px;
+    font-size: 1rem;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 26px;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.footer-btns > button > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-owners{
+    margin-top: 1.5em;
+}
+
+.footer-owners > h2{
+    font-family: Visia Pro;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.sub-footer-two{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    line-height: 1.5;
+}
+
+
+.sub-footer-two > a > h2{
+    font-size: 1rem;
+    font-family: Visia Pro;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1em 1em;
+}
+
+
+.sub-footer-two > a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sub-footer-two > h2{
+    font-size: 1rem;
+    font-family: Visia Pro;
+    color: #fff;
+    margin-left: 1em;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:  320px) {
+    .container{
+        max-width: 100%;
+    }
+
+    .sub-section-one > h1{
+        font-size: 3.25rem;
+    }
+
+    .sub-section-three > h1 > a {
+        font-size: 5rem;
+    }
+}
+
+
+@media (min-width: 376px) {
+    .container{
+        max-width: 100%;
+    }
+
+    .sub-section-one > h1{
+        font-size: 4rem;
+    }
+}
+
+
+@media (min-width: 1023px) {
+
+    .container{
+        max-width: 1024px;
+    }
+
+    .sub-header-two{
+        display: none;
+    }
+
+    /* SECTION ONE */
+
+    .header{
+        align-items: center;
+    }
+
+    
+    .section-one{
+        position: relative;
+        margin-top: 10.5em;
+    }
+
+    .big-screen{
+        display: flex;
+        font-family: Visia Pro;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        text-transform: uppercase;
+        width: 42%;
+        margin-left: 7em;
+        margin-top: 0.25em;
+    }
+
+    .big-screen-two{
+        display: flex;
+        font-family: Visia Pro;
+        font-size: 1rem;
+        margin-left: 4em;
+        cursor: pointer;
+    }
+
+    .header > img{
+        width: 8%;
+    }
+
+    .sub-section-one{
+        width: 100%;
+    }
+
+    .sub-section-one > button{
+        width: 111px;
+        margin-left: 2em;
+        margin-top: -2em;
+    }
+
+    .sub-section-one > h1{
+        font-size: 10.25rem;
+    }
+
+    .video-one{
+        width: 420px;
+        height: 554px;
+        top: 9em;
+    }
+    
+    .container-two{
+        position: absolute;
+        top: 25em;
+        left: 6em;    
+    }
+
+    .video-two > video{
+        width: 261px;
+        height: 165px;
+        object-fit: cover;
+    } 
+
+    .copyright{
+        display: block;
+        position: absolute;
+        width: 67px;
+        height: 22px;
+        right: 106px;
+        top: 354px;
+        font-family: Visia Pro;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    .hidden-img-one{
+        display: block;
+        position: absolute;
+        width: 207px;
+        height: 142px;
+        left: 56px;
+        top: 811px; 
+        background: url('./assets/images/section-one/1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hidden-img-two{
+        display: block;
+        position: absolute;
+        width: 166px;
+        height: 142px;
+        right: 0;
+        top: 585px;
+        background: url('./assets/images/section-one/2.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /* SECTION TWO STYLING */
+
+    .section-two{
+        margin-top: 44em;
+    }
+
+    .section-two > h1{
+        display: none;
+    }
+
+    .section-two > h3{
+        font-size: 7.125rem;
+    }
+
+    .section-two > h4{
+        width: 60%;
+    }
+
+    /* SECTION THREE STYLING */
+
+    .section-three > h1{
+        width: 44%;
+        font-size: 1.688rem;
+    }
+
+    .sub-section-three > h1 > a{
+        font-size: 10.25rem;
+    }
+
+    .img--socials{
+        height: 371.55px;
+        margin: -0.95em auto;
+    }
+
+    /* SECTION FOUR STYLING */
+    .section-four > h2{
+        font-size: 7.125rem;
+        text-align: start;
+    }
+
+    .head-one{
+        display: none;
+    }
+
+    .head-two{
+        display: flex;
+    }
+
+    .head-two > h2{
+        font-family: Veto Sans Cond;
+        font-weight: 300;
+        font-size: 6.25rem;
+        margin-left: 0.25em;
+        text-align: start;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-one{
+        width: 33%;
+    }
+
+    .one{
+        margin-top: 1.75em;
+    }
+
+    /* SECTION FIVE STYLING */
+
+    .feedbacks{
+        margin-bottom: 5em;
+    }
+
+    .feedback-one{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img--feedback--one{
+        width: 30%;
+        height: 250px;
+        margin-right: 2em;
+    }
+
+    .sub-feed{
+        width: 70%;
+    }
+
+    /* SECTION SIX STYLING */
+
+    .sub-section-six > h2{
+        font-size: 6.25rem;
+    }
+
+    .section-six > h2{
+        font-size: 6.25rem;
+    }
+
+    .section-six > h3{
+        font-size: 1.75rem;
+    }
+
+    .img-contact{
+        width: 40%;
+        height: 235px;
+    }
+
+    .sub-headline > img{
+        width: 9%;
+        margin-bottom: 0.5em;
+    }
+
+    .resort{
+        height: 709px;
+    }
+
+    /* SECTION SEVEN STYLING */
+
+    .footer > h1{
+        font-size: 6.3rem;
+    }
+
+    .sub-footer-one{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: -5em;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-btns{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 47%;
+        margin-left: 3em;
+    }
+
+    .footer > img{
+        width: 20%;
+        margin: 1.5em auto;
+    }
+
+    .sub-footer-two{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sub-footer-two > a{
+        width: 40%;
+    }
+
+    .sub-footer-two > h2{
+        width: 45%;
+        text-align: center;
+    }
+
+    .watermark{
+        padding-left: 6em;
+    }
+}
+
