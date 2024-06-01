@@ -939,3 +939,18 @@
     }
 }
 
+
+@media (min-width: 1766px) {
+    .header{
+        right: 0;
+    }
+
+    .header > h3,
+    .header > h2{
+        font-size: 2rem;
+    }
+
+    .container{
+        max-width: 1750px;
+    }
+}
