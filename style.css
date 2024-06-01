@@ -650,6 +650,47 @@
     }
 }
 
+@media (min-width:670px) {
+    .header{
+        right: 0;
+    }
+
+    .header > h2{
+        font-size: 1.5rem;
+    }
+
+    .sub-section-one > h1{
+        font-size: 7rem;
+    }
+
+    .sub-section-one > button{
+        font-size: 1.75rem;
+        padding: 1em 1em 1.25em 1em ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-one{
+        width: 60%;
+        height: 614px;
+        top: 92px;
+    }
+
+    .video-two > video{
+        width: 206px;
+        margin-left: 1em;
+    }
+
+    .section-two{
+        margin-top: 32em;
+    }
+
+    .sub-header-two{
+        margin-top: 10em;
+    }
+}
+
 
 @media (min-width: 1023px) {
 
@@ -665,6 +706,10 @@
 
     .header{
         align-items: center;
+    }
+
+    .header > h2{
+        font-size: 1rem;
     }
 
     
