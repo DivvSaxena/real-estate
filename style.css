@@ -743,6 +743,11 @@
 
     .header > h3{
         margin-left: -0.2em;
+        font-size: 1.125rem;
+    }
+
+    .header > h2{
+        font-size: 1.125rem;
     }
 
     .sub-section-one{
@@ -750,9 +755,10 @@
     }
 
     .sub-section-one > button{
-        width: 111px;
-        margin-left: 2em;
-        margin-top: -2em;
+        width: 15%;
+        margin-left: 1em;
+        font-size: 1.125rem;
+        margin-top: -1.25em;
     }
 
     .sub-section-one > h1{
