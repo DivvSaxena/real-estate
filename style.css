@@ -68,9 +68,8 @@
 
 
 .header > img{
-    width: 20%;
+    width: 60%;
     margin-top: 0.1275em;
-    margin-left: 1.75em;
 }
 
 .header > h1{
@@ -541,8 +540,8 @@
 }
 
 .footer > img{
-    width: 40%;
-    margin: 1.5em auto;
+    width: 80%;
+    margin: 3.5em auto;
     object-fit: cover;
     fill: #fff;
 }
@@ -739,7 +738,11 @@
     }
 
     .header > img{
-        width: 8%;
+        width: 25%;
+    }
+
+    .header > h3{
+        margin-left: -0.2em;
     }
 
     .sub-section-one{
@@ -960,7 +963,7 @@
     }
 
     .footer > img{
-        width: 20%;
+        width: 40%;
         margin: 1.5em auto;
     }
 
